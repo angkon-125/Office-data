@@ -18,6 +18,9 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
 }
+#signupForm{
+    
+}
 
 .left-section {
     flex: 1;
@@ -67,7 +70,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     min-width: 350px;
 }
 
@@ -120,19 +122,19 @@ body {
     background-color: #104e8b;
 }
 
-.social-login {
+.social-signup-login {
     margin-top: 15px;
     text-align: center;
 }
 
-.social-login span {
+.social-signup span {
     font-size: 10px;
     color: #666;
     margin-bottom: 8px;
     display: block;
 }
 
-.social-login a {
+.social-signup a {
     display: inline-block;
     margin: 0 8px;
     padding: 6px 10px;
@@ -141,15 +143,6 @@ body {
     border-radius: 5px;
     font-size: 10px;
     transition: transform 0.2s;
-}
-
-.social-login a:hover {
-    transform: translateY(-2px);
-}
-
-.social-login i {
-    margin-right: 4px;
-    font-size: 12px;
 }
 
 @media (max-width: 600px) {
@@ -195,14 +188,14 @@ body {
         padding: 8px;
         font-size: 12px;
     }
-    .social-login span {
+    .social-signup span {
         font-size: 8px;
     }
-    .social-login a {
+    .social-signup a {
         padding: 4px 8px;
         font-size: 8px;
     }
-    .social-login i {
+    .social-signup i {
         font-size: 10px;
     }
 }
