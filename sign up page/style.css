@@ -121,6 +121,9 @@ body {
 .submit-btn:hover {
     background-color: #104e8b;
 }
+.social-signup {
+    display: flex;
+}
 
 .social-signup-login {
     margin-top: 15px;
@@ -182,11 +185,22 @@ body {
     .form-group input {
         padding: 6px;
         font-size: 10px;
+        width: 100%;
     }
     .submit-btn {
-        max-width: 100%;
+        width: 100%;
         padding: 8px;
         font-size: 12px;
+    }
+    #signupForm{
+        width: 100%;
+    }
+    .social-signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     }
     .social-signup span {
         font-size: 8px;
@@ -198,4 +212,12 @@ body {
     .social-signup i {
         font-size: 10px;
     }
+    .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 }
