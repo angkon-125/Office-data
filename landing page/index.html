@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Office Data</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." aria-label="Search">
+                <button type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Office Data of Kow company</h1>
+            <p>Your one-stop solution for office management and data handling.</p>
+            <a href="services.html" class="btn">Explore Services</a>
+        </section>
+        <section class="frome-data">
+            <div class="data-card">
+                <form>
+                    <h2>Enter the Data</h2>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="id">ID</label>
+                        <input type="text" id="id" name="id" required>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>
+                            <legend>Department</legend>
+                            <input type="radio" id="hr" name="department" value="HR" required>
+                            <label for="hr">HR</label>
+                            <input type="radio" id="finance" name="department" value="Finance" required>
+                            <label for="finance">Finance</label>
+                            <input type="radio" id="it" name="department" value="IT" required>
+                            <label for="it">IT</label>
+                            <input type="radio" id="marketing" name="department" value="Marketing" required>
+                            <label for="marketing">Marketing</label>
+                            <input type="radio" id="software" name="department" value="Software" required>
+                            <label for="software">Software</label>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <label for="designation">Designation</label>
+                        <select id="designation" name="designation" required>
+                            <option value="" disabled selected>Select Designation</option>
+                            <optgroup label="HR">
+                                <option value="HR Manager">HR Manager</option>
+                                <option value="Recruiter">Recruiter</option>
+                                <option value="HR Coordinator">HR Coordinator</option>
+                            </optgroup>
+                            <optgroup label="Finance">
+                                <option value="Financial Analyst">Financial Analyst</option>
+                                <option value="Accountant">Accountant</option>
+                                <option value="Finance Manager">Finance Manager</option>
+                            </optgroup>
+                            <optgroup label="IT">
+                                <option value="System Administrator">System Administrator</option>
+                                <option value="Network Engineer">Network Engineer</option>
+                                <option value="IT Support Specialist">IT Support Specialist</option>
+                            </optgroup>
+                            <optgroup label="Marketing">
+                                <option value="Marketing Manager">Marketing Manager</option>
+                                <option value="Content Creator">Content Creator</option>
+                                <option value="SEO Specialist">SEO Specialist</option>
+                            </optgroup>
+                            <optgroup label="Software">
+                                <option value="Software Engineer">Software Engineer</option>
+                                <option value="DevOps Engineer">DevOps Engineer</option>
+                                <option value="QA Engineer">QA Engineer</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
