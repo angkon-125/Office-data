@@ -1,58 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Office Data</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Office Data of Kow Company</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <nav>
+<div class="container">
+    <header class="header">
+        <div class="logo">
+            <img src="img/The-Kow-Company-logo_White.png" alt="Kow Company Logo" width="100%" height="80" />
+        </div>
+        <nav class="menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
                 <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="search-container">
-                <input type="text" placeholder="Search..." aria-label="Search">
-                <button type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
-            </div>
         </nav>
     </header>
-    <main>
+
+    <main class="main-content">
         <section class="hero">
-            <h1>Welcome to Office Data of Kow company</h1>
-            <p>Your one-stop solution for office management and data handling.</p>
-            <a href="services.html" class="btn">Explore Services</a>
+            <div class="hero-image">
+                <img src="img/left icons.jpg" alt="Abstract graphic with various icons" />
+            </div>
+            <div class="hero-text">
+                <h1>Welcome to Kow Company</h1>
+                <p>Streamline your office operations with our expert data management solutions.</p>
+                <a href="services.html" class="btn primary">Explore Our Services</a>
+              <div class="icons">
+                <div class="icon">
+                <img src="img/brain_1070253.png" alt="Brain icon representing intelligence and innovation"/>
+                <h2>AI</h2>
+                </div>
+                <div class="icon">
+                <img src="img/admin_2875381.png" alt="Admin icon representing management and organization"/>
+                <h2>DevOps</h2>
+                </div>
+               <div class="icon">
+                <img src="img/oil_8084515.png" alt="Oil icon representing resources and efficiency"/>
+                <h2>Finance</h2>
+               </div>
+              </div>
+            </div>
         </section>
-        <section class="frome-data">
+
+        <section class="form-data">
             <div class="data-card">
                 <form>
-                    <h2>Enter the Data</h2>
+                    <h2>Submit Your Details</h2>
                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required />
                     </div>
                     <div class="form-group">
-                        <label for="id">ID</label>
-                        <input type="text" id="id" name="id" required>
+                        <label for="employeeId">Employee ID</label>
+                        <input type="text" id="employeeId" name="employeeId" required />
                     </div>
                     <div class="form-group">
                         <fieldset>
                             <legend>Department</legend>
-                            <input type="radio" id="hr" name="department" value="HR" required>
-                            <label for="hr">HR</label>
-                            <input type="radio" id="finance" name="department" value="Finance" required>
-                            <label for="finance">Finance</label>
-                            <input type="radio" id="it" name="department" value="IT" required>
-                            <label for="it">IT</label>
-                            <input type="radio" id="marketing" name="department" value="Marketing" required>
-                            <label for="marketing">Marketing</label>
-                            <input type="radio" id="software" name="department" value="Software" required>
-                            <label for="software">Software</label>
+                            <label><input type="radio" name="department" value="HR" required /> HR</label>
+                            <label><input type="radio" name="department" value="Finance" /> Finance</label>
+                            <label><input type="radio" name="department" value="IT" /> IT</label>
+                            <label><input type="radio" name="department" value="Marketing" /> Marketing</label>
+                            <label><input type="radio" name="department" value="Software" /> Software</label>
                         </fieldset>
                     </div>
                     <div class="form-group">
@@ -87,22 +103,37 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone" required>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required />
                     </div>
                     <div class="form-group">
                         <label for="address">Address</label>
-                        <input type="text" id="address" name="address" required>
+                        <input type="text" id="address" name="address" required />
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn submit">Submit</button>
                     </div>
                 </form>
             </div>
         </section>
-        
     </main>
-    <script src="script.js"></script>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Kow Company. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                <li><a href="#" aria-label="Instagram">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
