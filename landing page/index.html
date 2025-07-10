@@ -6,12 +6,12 @@
     <title>Office Data of Kow Company</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
-    </head>
+</head>
 <body>
 <div class="container">
     <header class="header">
         <div class="logo">
-            <img src="img/The-Kow-Company-logo_White.png" alt="Kow Company Logo" />
+            <img src="img/The-Kow-Company-logo_White.png" alt="Kow Company Logo" width="100%" height="80" />
         </div>
         <nav class="menu">
             <ul>
@@ -21,39 +21,31 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="SEARCH" />
-            <i class="search-icon">&#128269;</i> </div>
     </header>
 
     <main class="main-content">
         <section class="hero">
+            <div class="hero-image">
+                <img src="img/left icons.jpg" alt="Abstract graphic with various icons" />
+            </div>
             <div class="hero-text">
-                <h1>MAKE AN APPOINTMENT</h1>
-                <p>Streamline your office operations with our expert data management solutions. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-
-                <div class="hero-buttons">
-                    <a href="services.html" class="btn primary">LOREM IPSUM</a>
-                    <a href="#" class="btn secondary">SIT DOLOR</a>
+                <h1>Welcome to Kow Company</h1>
+                <p>Streamline your office operations with our expert data management solutions.</p>
+                <a href="services.html" class="btn primary">Explore Our Services</a>
+              <div class="icons">
+                <div class="icon">
+                <img src="img/brain_1070253.png" alt="Brain icon representing intelligence and innovation"/>
+                <h2>AI</h2>
                 </div>
-
-                <div class="icons">
-                    <div class="icon">
-                        <img src="img/brain_1070253.png" alt="Brain icon representing intelligence and innovation"/>
-                        <h2>AI</h2> <p>CLICK HERE</p>
-                    </div>
-                    <div class="icon">
-                        <img src="img/admin_2875381.png" alt="Admin icon representing management and organization"/>
-                        <h2>DevOps</h2> <p>CLICK HERE</p>
-                    </div>
-                    <div class="icon">
-                        <img src="img/oil_8084515.png" alt="Oil icon representing resources and efficiency"/>
-                        <h2>Finance</h2> <p>CLICK HERE</p>
-                    </div>
-                    <div class="icon">
-                        <img src="img/data.png" alt="Placeholder icon"/> <h2>More Data</h2> <p>CLICK HERE</p>
-                    </div>
+                <div class="icon">
+                <img src="img/admin_2875381.png" alt="Admin icon representing management and organization"/>
+                <h2>DevOps</h2>
                 </div>
+               <div class="icon">
+                <img src="img/oil_8084515.png" alt="Oil icon representing resources and efficiency"/>
+                <h2>Finance</h2>
+               </div>
+              </div>
             </div>
         </section>
 
@@ -61,16 +53,14 @@
             <div class="data-card">
                 <form>
                     <h2>Submit Your Details</h2>
-
-                    <div class="form-group half-width">
-                        <div class="input-wrapper">
-                            <input type="text" id="firstName" name="firstName" placeholder="FIRST NAME" required />
-                        </div>
-                        <div class="input-wrapper">
-                            <input type="text" id="lastName" name="lastName" placeholder="LAST NAME" required />
-                        </div>
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required />
                     </div>
-
+                    <div class="form-group">
+                        <label for="employeeId">Employee ID</label>
+                        <input type="text" id="employeeId" name="employeeId" required />
+                    </div>
                     <div class="form-group">
                         <fieldset>
                             <legend>Department</legend>
@@ -81,10 +71,10 @@
                             <label><input type="radio" name="department" value="Software" /> Software</label>
                         </fieldset>
                     </div>
-
                     <div class="form-group">
-                        <label for="designation" style="display:none;">Designation</label> <select id="designation" name="designation" required>
-                            <option value="" disabled selected>SELECT DESIGNATION</option>
+                        <label for="designation">Designation</label>
+                        <select id="designation" name="designation" required>
+                            <option value="" disabled selected>Select Designation</option>
                             <optgroup label="HR">
                                 <option value="HR Manager">HR Manager</option>
                                 <option value="Recruiter">Recruiter</option>
@@ -112,43 +102,18 @@
                             </optgroup>
                         </select>
                     </div>
-
-                    <div class="form-group half-width">
-                        <div class="input-wrapper date-picker">
-                             <label for="dateFrom" style="display:none;">Date From</label>
-                            <select id="dateFrom" name="dateFrom" required>
-                                <option value="" disabled selected>DATE FROM</option>
-                                <option value="2025-07-01">July 1, 2025</option>
-                                <option value="2025-07-08">July 8, 2025</option>
-                                <option value="2025-07-15">July 15, 2025</option>
-                            </select>
-                        </div>
-                        <div class="input-wrapper date-picker">
-                             <label for="dateEnd" style="display:none;">Date End</label>
-                            <select id="dateEnd" name="dateEnd" required>
-                                <option value="" disabled selected>DATE END</option>
-                                <option value="2025-07-07">July 7, 2025</option>
-                                <option value="2025-07-14">July 14, 2025</option>
-                                <option value="2025-07-21">July 21, 2025</option>
-                            </select>
-                        </div>
-                    </div>
-
                     <div class="form-group">
-                        <label for="phone" style="display:none;">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="PHONE NUMBER" required />
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required />
                     </div>
-
                     <div class="form-group">
-                        <label for="address" style="display:none;">Address</label>
-                        <input type="text" id="address" name="address" placeholder="ADDRESS" required />
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" required />
                     </div>
-
                     <div class="form-group">
-                        <label for="email" style="display:none;">Email Address</label>
-                        <input type="email" id="email" name="email" placeholder="EMAIL ADDRESS" required />
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required />
                     </div>
-
                     <div class="form-group">
                         <button type="submit" class="btn submit">Submit</button>
                     </div>
